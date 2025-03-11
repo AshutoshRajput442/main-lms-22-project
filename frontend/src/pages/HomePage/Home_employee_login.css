@@ -1,0 +1,81 @@
+.employee-login {
+  width: 45%;
+  max-width: 400px;
+  padding: 30px;
+  background: #ffffff;
+  color: #2e7d32;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 128, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.employee-login:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 128, 0, 0.25);
+}
+
+.employee-login h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #1b5e20;
+}
+
+.employee-login form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.employee-login label {
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #1b5e20;
+}
+
+.employee-login input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #2e7d32;
+  font-size: 16px;
+  color: #333;
+  background: #f1f8e9;
+  margin-bottom: 15px;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.employee-login input:focus {
+  border-color: #1b5e20;
+  box-shadow: 0 0 8px rgba(46, 125, 50, 0.3);
+}
+
+.employee-login button {
+  width: 100%;
+  padding: 12px;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.employee-login button:hover {
+  background: #1b5e20;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .employee-login {
+      width: 90%;
+      padding: 25px;
+  }
+}

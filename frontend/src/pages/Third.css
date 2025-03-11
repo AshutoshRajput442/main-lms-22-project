@@ -1,0 +1,120 @@
+.third-container {
+  display: flex;
+  flex-wrap: wrap; /* ✅ Responsive ke liye wrap enable */
+  gap: 20px;
+  padding: 20px;
+  /* justify-content: center; */
+}
+
+/* 📌 Left Panel - Course Details */
+.course-details {
+  flex: 1;
+  min-width: 250px;
+  max-width: 260px; 
+  padding: 20px;
+  border-radius: 10px;
+  background: #f8f9fa;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.course-details h2 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase; /* ✅ Always Uppercase */
+}
+
+.course-details p {
+  display: flex;
+  align-items: center;
+}
+
+/* 📌 Watch Time */
+.course-time {
+  display: flex;
+  align-items: center;
+}
+
+.course-icon {
+  font-size: 22px;
+  color: orange;
+  margin-right: 6px;
+}
+
+/* 📌 Right Panel - PDF Container */
+.pdf-container {
+  flex: 2;
+  /* border: 2px solid rebeccapurple; */
+  min-width: 280px;
+  /* max-width: 640px; */
+  text-align: center;
+  height: auto; /* ✅ Adjust height dynamically */
+}
+
+/* 📌 PDF Open Button */
+.pdf-open-button {
+  align-items: center;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  gap: 8px;
+}
+
+.pdf-open-button:hover {
+  background-color: #0056b3;
+}
+
+.pdf-icon {
+  margin-right: 6px;
+  font-size: 20px;
+}
+
+/* 📌 PDF Viewer */
+.pdf-viewer {
+  width: 100%;
+  height: 500px; /* ✅ Reduced height for better responsiveness */
+  border: none;
+}
+
+/* 📌 Next Button */
+.next-button-container {
+  margin-top: 20px;
+}
+
+.next-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.next-button.enabled {
+  background-color: green;
+}
+
+.next-button.disabled {
+  background-color: gray;
+  cursor: not-allowed;
+  filter: blur(2px);
+}
+
+/* ✅ Small Screen Adjustments */
+@media (max-width: 768px) {
+  .third-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pdf-viewer {
+    height: 400px;
+  }
+}
